@@ -25,8 +25,7 @@ public class TC_01 {
 	        driver.manage().window().maximize();
 	        driver.manage().timeouts().implicitlyWait(eCommerceUtil.waittime, TimeUnit.SECONDS);
 	    }
-	
-	  @Test
+	@Test
 	  public void Mobile () {
 			String actualBoxtitle = driver.getTitle();
 			assertEquals(actualBoxtitle,eCommerceUtil.etitle);
